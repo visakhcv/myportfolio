@@ -1,0 +1,219 @@
+ @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@200&family=Rowdies&family=Source+Sans+Pro:wght@300&display=swap'); 
+
+.html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    width: 100%;
+    background-color: aquamarine;
+}
+header{
+    background-image: url(/images/body_bg.png);
+    margin-top: -25px;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section{
+    padding: 0;
+    margin: 0;
+}
+/* nav */
+#navbar{
+    position: sticky;
+    top: 0;
+}
+.navitems{
+    margin-left: 100px;
+}
+.nav-link{
+    margin-left: 30px;
+}
+#navico{
+    color: antiquewhite;
+    margin-left:10%;
+    font-family: 'Rowdies', cursive;
+    font-size: 25px;
+}
+#navsideico{
+    color: antiquewhite;
+}
+/* caption */
+.caption_head{
+    width: 100%;
+    height: 300px;
+    
+}
+#h5{
+    color: aliceblue;
+    font-family: 'Oswald', sans-serif;;
+}
+#h1{
+    font-family: 'Rowdies', cursive;
+}
+#h1-exp{
+    color: aliceblue;
+    font-family: 'Rowdies', cursive;
+    font-size: 1rem;
+}
+#h3{
+    font-family: 'Times New Roman', Times, serif;
+    color: green;
+    font-size: 1rem;
+}
+#p{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #000;
+    font-size: 1rem;
+    text-align: justify;
+}
+#p-exp{
+    font-family: 'Times New Roman', Times, serif;
+    color: #000;
+    line-height: 0.8rem;
+    font-size: 0.9rem;
+}
+.col{
+    padding: 0px;
+}
+
+.caption_headcol{
+    width: 100%;
+    margin-top: 200px;
+}
+.role{
+    height: 100px;
+}
+.caption_headcol{
+    text-align: center;
+}
+
+.welcome{
+    font-size: 1.5rem;
+}
+#mousediv{
+    margin-top: 230px;
+}
+.mouse{
+    width: 30px;
+    height: 30px;
+}
+
+/* page */
+.p_page{
+    padding-top: 50px;
+   
+
+}
+#procontainer{
+    padding-left: 25px;
+}
+.mypic{
+    width: 270px;
+    height: 80%;
+}
+.theme{
+    list-style: none;
+}
+.theme::before{
+    content: "\26AC ";
+    border-radius: 50%;
+    color: chocolate;
+    font-size: 1.5rem;
+
+}
+#exp{
+    margin-top: 50px;
+    height: 500px;
+}
+.details{
+    background-color: gray;
+    border-radius: 2%;
+    padding-top: 20px;
+    padding-left: 20px;
+    line-height: 0.7;
+    height: 150px;
+}
+#details-size{
+    padding: 20px;
+}
+.etitle{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.year-tab{
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+/* footer */
+.hero{
+    width: 100%;
+    height: 200px;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* icons */
+.links{
+    display: flex;
+}
+
+.links a{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
+    margin: 20px 10px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+.links a .fab{
+    font-size: 30px;
+    line-height: 60px;
+    position: relative;
+    z-index: 10;
+    transition: 0.5s;
+}
+.links a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: -90px;
+    left: 0;
+    background: linear-gradient(-45deg ,white,red,blue);
+    position: absolute;
+    transition: 0.5s;
+}
+.links a:hover::after{
+    top: 0px;
+}
+.links a:hover .fab{
+    color: white;
+}
+
+.links a:hover{
+    transform: translateY(-10px);
+    transition: 1s;
+}
+
+/* contatc mail */
+
+#contact-mail{
+    text-decoration: none;
+    color: #000;
+}
+/* image animation */
+
+@media only screen and (max-width: 500px){
+    .mypic{
+        width: 200px;
+        height: 200px;
+    }
+}
